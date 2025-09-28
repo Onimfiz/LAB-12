@@ -71,7 +71,7 @@
  .coffee-grid {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
-     gap: 20px;
+     gap: 12px;
      margin-top: 40px;
  }
 
@@ -83,7 +83,7 @@
 
  .card-image {
      width: 100%;
-     height: 160px;
+     height: 120px;
      object-fit: cover;
  }
 
@@ -100,7 +100,7 @@
  }
 
  .card-content {
-     padding: 16px;
+     padding: 10px;
  }
 
  .card-header {
