@@ -1,0 +1,162 @@
+   * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            min-height: 100vh;
+            background-color: #121315;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background: url('img/bg-cafe-lg.jpg') center/cover;
+            z-index: -1;
+        }
+
+        main {
+            background-color: #1c1d1e;
+            max-width: 1200px;
+            width: 100%;
+            margin: 40px;
+            padding: 60px 40px;
+            border-radius: 12px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #FEF7EE;
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            color: #6F757C;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            margin: 0 8px;
+        }
+
+        .btn-primary {
+            background-color: #6F757C;
+            color: #FEF7EE;
+            font-weight: bold;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #FEF7EE;
+            border: transparent;
+            font-weight: bold;
+        }
+
+        .coffee-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 40px;
+        }
+
+        .coffee-card {
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #F6C768;
+            color: #1B1D1F;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card-content {
+            padding: 12px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            color: #FEF7EE;
+            font-size: 16px;
+        }
+
+        .card-price {
+            background-color: #BEE3CC;
+            color: #111315;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .card-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .rating-text {
+            color: #FEF7EE;
+            font-size: 13px;
+        }
+
+        .votes {
+            color: #6F757C;
+            font-size: 13px;
+        }
+
+        .sold-out {
+            color: #ED735D;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .no-ratings {
+            color: #6F757C;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .coffee-grid {
+                grid-template-columns: 1fr;
+            }
+        }
